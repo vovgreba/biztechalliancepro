@@ -1,0 +1,19 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+
+.hero-insights {
+  min-height: 301px;
+  .hero__inner {
+    min-height: 301px;
+  }
+  .hero__content {
+    margin-top: 0;
+    align-items: flex-start;
+    h1 {
+      margin-bottom: 0;
+      text-align: left;
+      color: var(--color-brown-800);
+    }
+  }
+}

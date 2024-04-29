@@ -1,0 +1,131 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.services {
+  padding: 80px 0;
+  background-color: var( --color-white-50);
+  h2 {
+    margin-bottom: 48px;
+  }
+
+  &__description {
+    color: var( --color-blue-900);
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 48px;
+  }
+
+  &__filter {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 48px;
+    button {
+      padding: 4px 44px 4px 12px;
+      border-radius: 16px;
+      letter-spacing: -1.5px;
+      font-weight: 500;
+      font-size: 21px;
+      color: var(--color-brown-800);
+      position: relative;
+      white-space: nowrap;
+      background: none;
+      &:not(.active)::after {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 10px;
+        top: 17px;
+        right: 12.5px;
+        background-image: url('../images/icons/arrow.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    .active {
+      background-color: var(--color-blue-100);
+      &:after {
+        content: '';
+        position: absolute;
+        width: 22px;
+        height: 18px;
+        top: 17px;
+        right: 13.5px;
+        background-image: url('../images/icons/arrow-active.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+  .service-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    .service{
+      max-width: 596px;
+      background-color: #fff;
+      border-radius: var(--radius-btn);
+      padding: 20px 24px 24px;
+      box-shadow: 0px 8px 16px 0px #0000000A;
+    }
+    .btn {
+      max-width: 96px;
+      padding: 8px 28px;
+      color: var(--color-blue-900);
+      border: 1px solid var(--color-blue-200);
+      margin-left: 0;
+      margin-right: auto;
+      &:hover,
+      &:focus {
+        border-color: var(--color-blue-650);
+        color: var(--color-brown-800);
+      }
+    }
+    h3 {
+      margin-bottom: 8px;
+    }
+    p {
+      color: #555555;
+      font-family: "Noto Sans", sans-serif;
+      font-variation-settings: "wdth" 100;
+      font-size: 14px;
+      line-height: 1.4;
+      margin-bottom: 16px;
+      letter-spacing: 0px;
+    }
+  }
+
+
+
+
+
+
+
+
+  @include media(desktop-l) {
+
+
+  }
+  @include media(desktop-wide) {
+
+
+  }
+
+
+  @include media(tablet) {
+
+   }
+
+
+
+  @include media(mobile-l) {
+
+
+   }
+  @include media(mobile-m) {
+
+   }
+
+}

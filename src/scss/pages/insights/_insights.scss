@@ -1,0 +1,33 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.insights-grid {
+  padding: 64px 0;
+  .insights__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px 24px;
+    margin-bottom: 48px;
+    img {
+      max-width: 596px;
+    }
+  }
+  .insights__card-content {
+    background-color: var(--color-blue-100);
+    padding: 24px;
+    max-width: unset;
+    h3 {
+      letter-spacing: -1px;
+      text-align: left;
+    }
+  }
+  .card__wrapper {
+    grid-template-columns: repeat(3, 177.33px);
+    .item {
+      max-width: 177.33px;
+    }
+  }
+  .btn {
+    max-width: 221px;
+  }
+}

@@ -1,0 +1,121 @@
+/* stylelint-disable declaration-no-important */
+@use '../utils/functions/' as *;
+@use '../utils/mixins' as *;
+
+*[class].btn {
+  font-family: var(--font-family-primary);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: var(--radius-btn);
+  width: 100%;
+  font-weight: var(--fw-400);
+  font-size: 18px;
+  white-space: nowrap;
+  line-height: 1.2;
+  text-align: center;
+  color: inherit;
+  background-color: inherit;
+  transition-property: background-color, color, border-color;
+  transition-duration: 0.2s;
+
+  &:hover,
+  &:focus {
+    border-color: var(--color-blue-650);
+    color: var(--color-brown-800);
+  }
+
+  &--reverse {
+    border-color: var(--color-blue-400);
+    color: var(--color-white);
+    background-color: var(--color-blue-400);
+
+    &:hover,
+    &:focus {
+      border-color: var(--color-blue-400);
+      color: var(--color-brown-800) !important;
+      background-color: var(--color-white);
+    }
+  }
+
+  &--user {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 5px;
+      top: 50%;
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image: var(--user);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      translate: 0 -50%;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      filter: invert(1);
+    }
+  }
+
+  @include media(mobile-s) {
+    margin: 0 auto;
+    min-width: auto;
+  }
+}
+
+
+
+*[class].request-btn {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-weight: var(--fw-400);
+  font-size: 18px;
+  color: var(--color-white);
+  &::after {
+    content: '';
+    position: relative;
+    right: 0;
+    width: 10px;
+    height: 18px;
+    background-image: var(--arrow);
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition-property: filter;
+    transition-duration: 0.2s;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    filter: invert(0);
+  }
+}
+
+.arrow.btn {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 24px;
+
+  &::after {
+    content: '';
+    position: relative;
+    right: 0;
+    width: 15.58px;
+    height: 15px;
+    background-image: var(--arrow);
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition-property: filter;
+    transition-duration: 0.2s;
+  }
+}

@@ -1,0 +1,97 @@
+@use '../utils/functions/' as *;
+@use '../utils/mixins' as *;
+
+html,
+body {
+  scroll-behavior: smooth;
+  overscroll-behavior-y: none;
+}
+
+.page {
+  font-family: var(--font-family-primary);
+  font-weight: var(--fw-400);
+  font-style: normal;
+  font-size: clamp(16px, 1vw, 20px);
+  line-height: 1;
+  letter-spacing: 0;
+  background-color: var(--color-white);
+  font-optical-sizing: auto;
+  font-variation-settings: "MONO" 0;
+  &__body {
+    min-width: 320px;
+    min-height: var(--vh);
+  }
+
+  &.background {
+    background-color: var(--color-blue-400);
+  }
+
+  &.open {
+    overflow: hidden;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  width: 100%;
+  max-width: var(--container-width);
+
+  &--header {
+    max-width: var(--container-width--header);
+  }
+}
+
+
+.site-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr auto;
+}
+
+
+.background {
+  background-color: var(--color-white-150);
+}
+
+.background--dark {
+  background-color: var(--color-blue-400);
+}
+
+.logo {
+  width: 100%;
+  max-width: 232px;
+  font-size: 24px;
+}
+
+.cards {
+  display: flex;
+  gap: 24px;
+  img {
+    max-width: 389px;
+    height: 254px;
+    width: 100%;
+    border-top-left-radius: var(--radius-btn);
+    border-top-right-radius: var(--radius-btn);
+
+  }
+  .card-content {
+    max-width: 389px;
+    width: 100%;
+    border-bottom-left-radius: var(--radius-btn);
+    border-bottom-right-radius: var(--radius-btn);
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+
+

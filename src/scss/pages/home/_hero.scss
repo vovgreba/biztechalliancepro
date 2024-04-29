@@ -1,0 +1,115 @@
+@use '../../utils/functions/' as *;
+@use '../../utils/mixins/' as *;
+
+.hero {
+  min-height: 800px;
+
+  &__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: var(--header-height);
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -133px;
+
+    h1 {
+      font-size: 56px;
+      margin-bottom: 24px;
+      text-align: end;
+      max-width: 869px;
+    }
+
+    p {
+      font-family: var(--font-family-secondary);
+      margin-bottom: 32px;
+      font-size: 20px;
+      line-height: 1.5;
+      color: #fff;
+        font-variation-settings: "slnt" 0;
+    }
+
+    .btn {
+      max-width: 184px;
+      justify-content: center;
+      padding: 20px 48px;
+      white-space: nowrap;
+      background-color: #fff;
+      color: var(--color-blue-900);
+      margin: 0;
+      border: none;
+      &::after {
+        display: none;
+      }
+      &:hover,
+      &:focus {
+        background-color: var(--color-blue-650);
+        color: #fff;
+      }
+    }
+
+    &--home {
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -133%;
+        left: -115px;
+        background-image: url('../images/home/rhombuses.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 974px;
+        height: 338px;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: -109%;
+        right: 43px;
+        background-image: url('../images/home/rhombuse.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 71px;
+        height: 80px;
+      }
+    }
+
+  }
+
+
+  @include media(mobile-l) {
+    min-height: 600px;
+
+    &__content {
+      padding: 20px;
+      h1 {
+        font-size: 34px;
+      }
+    }
+
+    &__inner {
+      min-height: 600px;
+    }
+  }
+  @include media(mobile-s) {
+    &__content .btn {
+      max-width: none;
+      width: 100%;
+    }
+  }
+
+}

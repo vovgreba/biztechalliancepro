@@ -1,0 +1,44 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.customized {
+  padding: 85px 80px;
+
+  h2 {
+    position: relative;
+    margin-bottom: 48px;
+    overflow: visible;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 62px;
+      height: 60px;
+      top: -6px;
+      right: -110px;
+      background-image: url('../images/services/customized.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  h3 {
+    font-family: var(--font-family-secondary);
+    font-variation-settings: "slnt" 0;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #181818;
+    margin-bottom: 8px;
+  }
+  p {
+    font-family: var(--font-family-secondary);
+    font-variation-settings: "slnt" 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  &__card-content {
+    background-color: var(--color-blue-100);
+    padding: 24px;
+    min-height: 255px;
+  }
+
+}

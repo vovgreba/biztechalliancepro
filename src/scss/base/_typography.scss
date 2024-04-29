@@ -1,0 +1,45 @@
+@use '../utils/functions/' as *;
+@use '../utils/mixins/' as *;
+
+h1,
+h2,
+h3 {
+  overflow: hidden;
+  width: fit-content;
+  font-weight: var(--fw-600);
+  line-height: 1.2;
+  letter-spacing: 0px;
+  color: var(--color-white);
+}
+
+h1 {
+  font-size: clamp(2.25rem, 1.9951rem + 1.0458vi, 56px);
+  line-height: 1.05;
+  font-variation-settings: "MONO" 1;
+  @include media(mobile-l) {
+    font-size: 34px;
+  }
+}
+
+h2,
+.title {
+  font-size: 42px;
+  font-variation-settings: "MONO" 1;
+  margin: 0 auto;
+  color: var(--color-blue-900);
+  text-transform: capitalize;
+}
+
+h3 {
+  font-size: 22px;
+  width: 100%;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: var(--fw-400);
+  letter-spacing: 0;
+}
+
+

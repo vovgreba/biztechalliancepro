@@ -1,0 +1,88 @@
+<header class="header">
+  <div class="container container--header">
+    <div class="header__inner">
+
+      <nav class="nav">
+
+        <button class="burger" aria-label="Mobile menu" type="button"> <span></span> </button>
+
+        <a class="logo" href="index.html">
+          <img src="./images/logo.svg" alt="logo" width="232" height="40" loading="lazy">
+        </a>
+
+        <div class="nav__inner">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="company.html" class="nav__link {{ page === 'company' }}">
+                Company
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="services.html" class="nav__link {{ page === 'services' }}">
+                services
+              </a>
+            </li>
+
+
+            <li class="nav__item">
+              <a href="insights.html" class="nav__link {{ page === 'insights' }}">
+                Insights
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link {{ page === 'contact' }}">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+
+          <div class="nav__btns">
+            <a class="btn btn--user" href="sign-up.html">
+              Sign Up
+            </a>
+
+            <button class="btn btn--reverse request-btn" type="button" formsappId="">
+              Create a Case
+            </button>
+          </div>
+        </div>
+
+      </nav>
+
+    </div>
+
+  </div>
+</header>
+
+
+<script>
+
+  const startHeightValue = () => {
+    let vh = window.innerHeight * 1;
+    document.querySelector(':root').style.setProperty('--vh', `${vh}px`);
+
+    const pageHeader = document.querySelector('.header')
+
+    const headerHeight = pageHeader ? pageHeader.offsetHeight : 0;
+
+    document.documentElement.style.setProperty(
+      '--header-height',
+      `${headerHeight}px`
+    );
+
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 0) {
+      pageHeader.classList.add('header--scroll')
+    } else {
+      pageHeader.classList.remove('header--scroll')
+    }
+  }
+
+  window.addEventListener('resize', startHeightValue);
+  window.addEventListener('scroll', startHeightValue);
+
+  startHeightValue();
+
+</script>

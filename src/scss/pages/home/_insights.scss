@@ -1,0 +1,76 @@
+@use '../../utils/functions/' as *;
+@use '../../utils/mixins/' as *;
+
+
+.insights {
+  padding: 80px 0;
+
+  h2 {
+    color: var(--color-blue-900);
+    margin-bottom: 48px;
+  }
+  h3 {
+    color: #000;
+    margin-bottom: 8px;
+  }
+  p {
+    font-family: var(--font-family-secondary);
+    font-variation-settings: "slnt" 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .btn {
+    margin: 0 auto;
+    padding: 20px 48px;
+    max-width: 186px;
+    border: 1px solid var(--color-blue-200);
+    background: #fff;
+    color: var(--color-blue-900);
+  }
+
+  &__card-content {
+    background-color: var(--color-blue-100);
+    text-align: center;
+    padding: 24px;
+    span {
+      white-space: nowrap;
+    }
+  }
+
+  &__cards {
+    margin-bottom: 48px;
+  }
+
+  .card__wrapper {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 108.5);
+    gap: 12px;
+    background-color: var(--color-white-100);
+    border-top-left-radius: var(--radius-btn);
+    border-top-right-radius: var(--radius-btn);
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 108.5;
+      height: 101px;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1.2;
+      &:nth-child(1), &:nth-child(4){
+        border: 1px solid #FABA17;
+        color: #FABA17;
+      }
+      &:nth-child(2), &:nth-child(5){
+        border: 1px solid #1DCE1A;
+        color: #1DCE1A;
+      }
+      &:nth-child(3), &:nth-child(6){
+        border: 1px solid #FA1769;
+        color: #FA1769;
+      }
+    }
+  }
+}

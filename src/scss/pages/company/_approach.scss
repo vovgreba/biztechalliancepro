@@ -1,0 +1,25 @@
+@use '../../utils/functions/' as *;
+@use '../../utils/mixins/' as *;
+
+.approach {
+  padding: 130px 0;
+
+  h2 {
+    margin-bottom: 48px;
+    color: var(--color-brown-850);
+  }
+  h3 {
+    color: #000;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    span {
+      color: var(--color-blue-200);
+      margin-right: 40px;
+    }
+  }
+  p {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+}
