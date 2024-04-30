@@ -1,4 +1,4 @@
-# Parcel template
+# biztechalliancepro
 
 This project was created using Parcel. For introduction and setup additional
 features [refer to documentation](https://parceljs.org/).
