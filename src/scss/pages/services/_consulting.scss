@@ -2,7 +2,7 @@
 @use "../../utils/mixins/"as*;
 
 .consulting {
-  padding: 85px 80px;
+  padding: 85px 0 80px;
 
   h2 {
     position: relative;
@@ -50,4 +50,45 @@
     min-height: 160px;
   }
 
+
+  @include media(desktop) {
+    .consulting__card-content {
+      min-height: 190px;
+    }
+  }
+  @include media(tablet) {
+    .consulting__card-content {
+      min-height: 220px;
+    }
+  }
+  @include media(mobile-l) {
+    padding: 40px 0;
+    h2 {
+      margin-bottom: 28px;
+    }
+    &__cards {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      img {
+        max-width: unset;
+      }
+    }
+    .consulting__card-content {
+      min-height: unset;
+    }
+  }
+
+  @include media(mobile-m) {
+    h2 {
+      margin-bottom: 28px;
+    }
+  }
+  @include media(mobile-s) {
+    h2 {
+      &::after {
+        right: -60px;
+      }
+    }
+
+  }
 }

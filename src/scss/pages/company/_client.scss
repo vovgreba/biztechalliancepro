@@ -5,6 +5,7 @@
   padding: 84px 0;
   h2 {
     margin-bottom: 40px;
+    text-align: center;
   }
 
   h3 {
@@ -31,5 +32,27 @@
     }
   }
 
+  @include media(tablet-wide) {
+    &__description {
+      min-height: 270px;
+    }
+  }
+  @include media(mobile-l) {
+    &__description {
+      min-height: 190px;
+    }
+  }
+  @include media(mobile-m) {
+    padding: 40 0;
+    &__description {
+      min-height: 220px;
+    }
+  }
+  @include media(mobile-s) {
+    padding: 40 0;
+    &__description {
+      min-height: 280px;
+    }
+  }
 
 }

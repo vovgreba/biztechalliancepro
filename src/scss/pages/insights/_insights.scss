@@ -23,11 +23,68 @@
   }
   .card__wrapper {
     grid-template-columns: repeat(3, 177.33px);
-    .item {
-      max-width: 177.33px;
-    }
   }
   .btn {
     max-width: 221px;
+  }
+  .card {
+    transition: transform 0.4s;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  @include media(desktop) {
+
+    .insights__cards {
+      grid-template-columns: repeat(2, 450px);
+      justify-content: center;
+    }
+    .insights__card-content {
+      min-height: 160px;
+    }
+
+    .card__wrapper {
+      grid-template-columns: repeat(3, 125px);
+    }
+  }
+
+  @include media(tablet) {
+
+    .insights__cards {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+    }
+    .insights__card-content {
+      min-height: 210px;
+    }
+    .insights__card-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card__wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @include media(mobile-l) {
+    padding: 40 0 0;
+    .insights__cards {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      gap: 10px;
+      img {
+        max-width: unset;
+      }
+    }
+    .insights__card-content {
+      min-height: 100px;
+    }
+    .card__wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .btn {
+      max-width: unset;
+    }
   }
 }

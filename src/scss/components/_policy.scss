@@ -2,33 +2,38 @@
 @use "../utils/mixins"as*;
 
 .policy {
-  padding: 161px 0 86px;
-
-
+  padding: 206px 0 86px;
+  &-privacy {
+    .policy__content {
+      &:nth-child(n+3) {
+        background-color: #F3F5F7;
+      }
+    }
+  }
   &__content {
     margin-bottom: 48px;
+
     &:last-child {
       margin-bottom: 0;
     }
   }
 
   h1 {
-    font-size: 64px;
-    line-height: 1.2;
-    margin: 0 auto 48px;
-    color: var(--color-brown-medium);
+    margin-bottom: 48px;
   }
 
   h2 {
+    margin: 0;
     margin-bottom: 24px;
-    font-size: 32px;
+    font-size: 22px;
+    letter-spacing: -1px;
+    color: var(--color-blue-600);
   }
 
   p {
-    color: var(--color-brown-dark);
-    font-size: 18px;
+    color: var(--color-blue-900);
+    font-size: 20px;
     letter-spacing: 0;
-    text-align: left;
     margin-bottom: 24px;
     &:last-child {
       margin-bottom: 0;
@@ -44,15 +49,18 @@
   }
 
   li {
-    margin-bottom: 5px;
-    color: var(--color-brown-dark);
+    font-size: 20px;
+    margin-bottom: 30px;
+    span {
+      font-weight: 800;
+    }
     &:last-child {
       margin-bottom: 0;
     }
   }
 
   @include media(tablet) {
-    padding: 60px 0;
+    padding: 180px 0 60px;
   }
 
   @include media(mobile-m) {

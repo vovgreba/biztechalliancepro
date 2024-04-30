@@ -81,6 +81,36 @@ body {
     border-bottom-left-radius: var(--radius-btn);
     border-bottom-right-radius: var(--radius-btn);
   }
+
+
+  @include media(desktop) {
+    .card-content {
+      min-height: 276px;
+    }
+  }
+  @include media(tablet-wide) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    .card-content {
+      min-height: 276px;
+    }
+    img, .card-content {
+      max-width: unset;
+    }
+  }
+  @include media(tablet) {
+    .card-content {
+      min-height: 296px;
+    }
+  }
+  @include media(mobile-l) {
+    // grid-template-columns: 1fr;
+    .card-content {
+      min-height: unset;
+    }
+  }
+
 }
 
 .swiper {

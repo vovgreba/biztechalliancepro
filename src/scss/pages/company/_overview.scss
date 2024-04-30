@@ -53,4 +53,26 @@
       }
     }
   }
+
+  @include media(tablet) {
+    &__flex {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    &__welcome-message {
+      max-width: unset;
+    }
+    &__content {
+      img {
+        max-width: unset;
+      }
+    }
+  }
+
+  @include media(mobile-l) {
+    padding: 40px 0;
+    h2 {
+      margin-bottom: 28px;
+    }
+  }
 }

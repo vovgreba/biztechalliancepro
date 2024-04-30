@@ -42,3 +42,4 @@ function filterEvents(filter) {
     }
   });
 }
+

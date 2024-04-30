@@ -5,6 +5,13 @@
   padding: 86px 0 84px;
   &-us {
     padding-top: 206px;
+    h1 {
+      color: #555555;
+      font-size: 42px;
+      letter-spacing: 0;
+      margin: 0;
+      margin-bottom: 48px;
+    }
   }
   &__wrapper {
     max-width: 800px;
@@ -58,12 +65,14 @@
   .btn {
     max-width: 177px;
     padding: 8px 28px;
-    background-color: var(  --color-blue-650);
+    background-color: var(--color-blue-650);
   }
 
 
   @include media(tablet) {
-    padding: 40px 0 60px;
+    &-us {
+      padding-top: 174px;
+    }
     &__wrapper {
       flex-direction: column;
     }
@@ -71,6 +80,32 @@
       max-width: unset;
     }
 
+  }
+
+  @include media(mobile-l) {
+    padding: 40px 0;
+    &-us {
+      padding-top: 154px;
+      h1 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @include media(mobile-m) {
+    h2 {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 28px;
+    }
+    &-us {
+      h1 {
+        margin-bottom: 20px;
+      }
+    }
+    .btn {
+      max-width: unset;
+    }
   }
 
 }

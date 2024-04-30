@@ -11,6 +11,11 @@
   padding-top: 24px;
   &--bg {
     padding-bottom: 24px;
+    background-image: url('../images/bg-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
   }
   &__inner {
     border-radius: var(--radius-btn);

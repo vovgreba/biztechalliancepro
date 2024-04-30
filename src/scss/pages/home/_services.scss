@@ -47,5 +47,42 @@
       letter-spacing: 0;
     }
   }
+
+  @include media(desktop) {
+    .card-content {
+      min-height: 200px;
+    }
+  }
+  @include media(desktop) {
+    .card-content {
+      min-height: unset;
+    }
+    &__card {
+      &:nth-child(3) {
+        grid-column: span 2;
+        .card-content {
+          min-height: unset;
+        }
+      }
+    }
+  }
+  @include media(mobile-l) {
+    &__cards {
+      grid-template-columns: 1fr;
+    }
+    &__card {
+      &:nth-child(3) {
+        grid-column: unset;
+      }
+    }
+  }
+  @include media(mobile-m) {
+    .btn {
+      max-width: unset;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
 }
 

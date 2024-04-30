@@ -4,15 +4,12 @@
 .footer {
   background-color: var(--color-blue-600);
 
-
-
   &__inner {
-    padding: 25px 0 49px;
+    padding: 25px 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
-
 
   .nav__inner {
     display: flex;
@@ -30,8 +27,9 @@
   }
 
   .nav__link {
-    border: none;
+    border: 1px solid transparent;
     color: #fff;
+    vertical-align: bottom;
   }
 
   &__info {
@@ -39,6 +37,9 @@
     flex-direction: column;
     align-items: end;
     color: #fff;
+    p {
+      text-align: center;
+    }
     .nav {
       margin-bottom: 20px;
       &__list {
@@ -53,9 +54,9 @@
     display: unset;
     letter-spacing: -2px;
     padding: 4px;
-    border: none;
+    border: 1px solid transparent;
     font-size: 18px;
-    line-height: 1.2;
+    line-height: 1;
     white-space: nowrap;
     margin: 0;
     color: #fff;
@@ -65,28 +66,54 @@
     &::before {
       display: none;
     }
-
+    // &:hover,
+    // &:focus {
+    //   border-color: var(--color-blue-650);
+    //   color: var(--color-brown-800);
+    // }
   }
 
 
-
-
+  @include media(tablet) {
+    .nav__item {
+      margin-bottom: 10px;
+    }
+  }
   @include media(mobile-l) {
-
+    .footer__inner {
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .nav__list {
+      margin-right: 0;
+    }
+    .nav__inner {
+      max-width: unset;
+    }
+    &__info {
+      align-items: center;
+      width: 100%;
+      max-width: unset;
+      .nav__list {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
   }
-  @include media(mobile-m) {
-    &__buttons {
-      margin-right: 0;
-    }
 
-    &__contacts {
-      text-align: center;
-    }
+  @include media(mobile-s) {
 
-    .nav {
-      margin-right: 0;
-    }
-
+    // .nav__inner {
+    //   flex-direction: column;
+    //   align-items: center;
+    //   justify-content: center;
+    //   max-width: unset;
+    //   gap: 10px;
+    // }
+    // .nav__list {
+    //   align-items: center;
+    // }
 
   }
   @include media(mobile-s) {

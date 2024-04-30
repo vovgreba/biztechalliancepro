@@ -15,6 +15,7 @@
       margin: 0;
       margin-bottom: 20px;
       text-transform: none;
+      text-align: center;
     }
     &:after {
       content: '';
@@ -74,4 +75,27 @@
 
   }
 
+  @include media(tablet-wide) {
+
+    &__inner {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  @include media(mobile-l) {
+    padding: 40px 0;
+    &__inner {
+      padding: 40px;
+      &::after {
+        display: none;
+      }
+    }
+    &__form {
+      flex-direction: column;
+      label, .btn {
+        max-width: unset;
+      }
+    }
+  }
 }

@@ -79,7 +79,7 @@
   }
   .item4 {
     grid-area: 3 / 3 / 4 / 4;
-    align-self: end;
+    align-self: flex-end;
     margin-left: -59px;
     padding-bottom: 20px;
     &::after {
@@ -90,6 +90,113 @@
       left: -341px;
       background-image: url('../images/icons/line-bottom.svg');
 
+    }
+  }
+
+  @include media(tablet) {
+    .item1, .item2, .item3, .item4 {
+      margin: 0;
+      padding: 0;
+      padding-top: 20px;
+      justify-self: center;
+      align-self: flex-start;
+    }
+    .item1 {
+      &:after {
+        width: 111px;
+        height: 167px;
+        bottom: -200px;
+        left: 35px;
+        transform: rotate(-30.5deg);
+      }
+    }
+    .item2 {
+      &:after {
+        content: '';
+        background-image: url('../images/icons/line-left.svg');
+        width: 111px;
+        height: 167px;
+        bottom: -200px;
+        left: 74px;
+        transform: rotate(-30.5deg);
+      }
+      &::before {
+        content: '';
+        width: 262px;
+        height: 41px;
+        top: 15px;
+        left: -272px;
+        transform: rotate(-4.5deg);
+      }
+    }
+    .item4 {
+      &::after {
+        content: '';
+        width: 262px;
+        height: 41px;
+        bottom: -4px;
+        left: -272px;
+        transform: rotate(-4.5deg);
+        background-image: url('../images/icons/line-top.svg');
+      }
+    }
+  }
+
+  @include media(mobile-l) {
+
+    &__values {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .item1, .item2, .item3, .item4 {
+      padding-top: 0;
+      justify-self: center;
+      align-self: flex-start;
+      grid-area: unset;
+
+    }
+    .item2, .item3 {
+      &::after {
+        content: '';
+        width: 56px;
+        background-image: url('../images/icons/line-left.svg');
+        height: 84px;
+        bottom: -88px;
+        left: 90px;
+        transform: rotate(-30.5deg);
+      }
+    }
+    .item2 {
+      &::before {
+        content: '';
+        display: none;
+      }
+    }
+    .item4 {
+      &::after {
+        content: '';
+        display: none;
+      }
+    }
+    .item1 {
+      &::after {
+        content: '';
+        width: 56px;
+        background-image: url('../images/icons/line-left.svg');
+        height: 84px;
+        bottom: -88px;
+        left: 57px;
+        transform: rotate(-30.5deg);
+      }
+    }
+
+  }
+
+  @include media(mobile-l) {
+    padding: 40px 0;
+    h2 {
+      margin-bottom: 28px;
+      text-align: center;
     }
   }
 }

@@ -47,8 +47,8 @@
 
   &__items{
     display: grid;
-    grid-template-columns: repeat(3, 384px);
-    gap: 64px 32px;
+    grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+    gap: 96px 32px;
   }
 
   &__item{
@@ -125,4 +125,36 @@
       }
     }
   }
+
+  @include media(desktop-wide) {
+    &__header {
+      &:after {
+        right: -25px;
+      }
+    }
+  }
+  @include media(desktop) {
+    &__header {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  @include media(mobile-m) {
+    padding: 40px 0;
+    &__header {
+      flex-direction: column;
+      gap: 20px;
+      .btn {
+        max-width: unset;
+      }
+    }
+    &__items{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 64px 32px;
+    }
+  }
 }
+
+

@@ -28,6 +28,10 @@ h2,
   margin: 0 auto;
   color: var(--color-blue-900);
   text-transform: capitalize;
+  @include media(mobile-l) {
+    font-size: 32px;
+  }
+
 }
 
 h3 {

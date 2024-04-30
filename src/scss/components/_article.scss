@@ -1,0 +1,63 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.article {
+  padding: 64px 0;
+  &__head {
+    border-radius: 20px;
+    background-color: #D4F7FF;
+    margin-bottom: 48px;
+    padding: 20px 24px;
+    h2 {
+      margin: 0 0 8px;
+      font-size: 22px;
+      color: #000;
+    }
+    p{
+      font-family: var(--font-family-secondary);
+      font-variation-settings:"slnt" 0;
+      line-height: 1.60;
+      font-size: 14px;
+      color: var(--color-blue-900);
+    }
+
+  }
+  li{
+    list-style: disc;
+    margin-left: 20px;
+    li {
+      margin-left: 20px;
+    }
+  }
+  &__info {
+    background-color: #F2F8FF;
+    img {
+      border-top-left-radius: var(--radius-btn);
+      border-top-right-radius: var(--radius-btn);
+      max-width: 1216px;
+      width: 100%;
+    }
+    p, li {
+      font-size: 20px;
+      line-height: 1.25;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &__paragraph--bottom {
+    margin-bottom: 30px;
+  }
+  .article__margin--not{
+    margin-bottom: 30px;
+    li {
+       margin-bottom: 0;
+     }
+  }
+  &__inner-text {
+    padding: 24px;
+  }
+  @include media(mobile-l) {
+    padding: 40px 0;
+  }
+}

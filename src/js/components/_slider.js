@@ -6,7 +6,9 @@ import 'swiper/modules/pagination'
 import 'swiper/modules/navigation'
 
 
+
 const swiperReview = new Swiper('.my-swiper', {
+
   modules: [Navigation, Pagination],
 
   slidesPerView: 1,
@@ -25,19 +27,19 @@ const swiperReview = new Swiper('.my-swiper', {
   grabCursor: true,
   breakpoints: {
     320: {
+      slidesPerView: 1,
+    },
+
+    768: {
       slidesPerView: 1.2,
     },
-    768: {
-      slidesPerView: 1.8,
-    },
-    991: {
-      slidesPerView: 3,
-    },
-    1200: {
+
+    1180: {
       slidesPerView: 1,
     },
   },
 });
+
 
 const swiperTeam = new Swiper('.team__swiper', {
 
@@ -49,19 +51,19 @@ const swiperTeam = new Swiper('.team__swiper', {
   mousewheel: true,
   breakpoints: {
     320: {
-      slidesPerView: 1.2,
+      slidesPerView: 1,
     },
     768: {
-      slidesPerView: 1.8,
+      slidesPerView: 1,
     },
-    991: {
-      slidesPerView: 2,
-    },
-    1200: {
+    992: {
       slidesPerView: 1.2,
     },
+
+
   },
 });
+
 const swiperClient = new Swiper('.client__swiper', {
 
   slidesPerView: 1,
@@ -75,12 +77,13 @@ const swiperClient = new Swiper('.client__swiper', {
       slidesPerView: 1.2,
     },
     768: {
-      slidesPerView: 1.8,
+      slidesPerView: 2.2,
     },
     991: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
-    1200: {
+
+    1280: {
       slidesPerView: 3.4
     },
   },

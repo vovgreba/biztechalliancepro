@@ -28,5 +28,31 @@
       }
     }
   }
-
+  @include media(tablet-wide) {
+    &__slide {
+      min-height: 500px;
+    }
+  }
+  @include media(tablet) {
+    &__slide {
+      min-height: unset;
+    }
+  }
+  @include media(mobile-l) {
+    &__slide {
+      flex-direction: column;
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+  @include media(mobile-m) {
+    padding: 40px 0;
+    h2 {
+      margin-bottom: 28px;
+    }
+  }
 }
+
+
+

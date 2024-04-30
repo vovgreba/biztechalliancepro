@@ -98,34 +98,40 @@
   }
 
 
-
-
-
-
-
-
-  @include media(desktop-l) {
-
-
+  @include media(desktop) {
+    &__filter {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+    }
   }
-  @include media(desktop-wide) {
-
-
-  }
-
-
-  @include media(tablet) {
-
-   }
-
-
 
   @include media(mobile-l) {
-
-
+    padding: 40px 0;
+    &__filter {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
+    .service-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      .service {
+        max-width: unset;
+      }
+    }
    }
   @include media(mobile-m) {
-
+    h2 {
+      margin-bottom: 28px;
+    }
+    .service-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      .btn {
+        max-width: unset;
+      }
+    }
    }
 
 }
