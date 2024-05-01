@@ -10,6 +10,10 @@
     margin-bottom: 60px;
   }
 
+  .swiper {
+    max-width: 1440px;
+    padding-left: 112px;
+  }
   &__slide {
     display: flex;
     gap: 28px;
@@ -26,6 +30,11 @@
       &:not(:last-child) {
         margin-bottom: 20px;
       }
+    }
+  }
+  @include media(desktop-wide) {
+    .swiper {
+      padding-left: 15px;
     }
   }
   @include media(tablet-wide) {

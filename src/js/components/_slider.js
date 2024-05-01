@@ -45,7 +45,6 @@ const swiperTeam = new Swiper('.team__swiper', {
 
   slidesPerView: 1,
   spaceBetween: 20,
-  loop: true,
   draggable: true,
   grabCursor: true,
   mousewheel: true,

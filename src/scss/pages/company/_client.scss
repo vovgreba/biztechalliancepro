@@ -8,6 +8,10 @@
     text-align: center;
   }
 
+  .swiper {
+    max-width: 1440px;
+    padding-left: 112px;
+  }
   h3 {
     color: #000;
     margin-left: 24px;
@@ -29,6 +33,12 @@
       .client__description {
         padding: 25px 24px;
       }
+    }
+  }
+
+  @include media(desktop-wide) {
+    .swiper {
+      padding-left: 15px;
     }
   }
 
