@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Workspace Comforts | Company</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="/company.21711d4b.css">
+  <link rel="stylesheet" href="/company.b10d73a7.css">
+
+  <script src="/company.6300e3bc.js" defer=""></script>
+  <script src="/company.975ef6c8.js" defer=""></script>
+
+  <style>.page {
+  scroll-padding-top: calc(var(--header-height));
+}
+</style>
+
+</head>
+
+<body class="page__body"><svg aria-hidden="true" width="0" height="0" style="position:absolute"></svg>
+  <div class="site-container">
+
+    <header class="header">
+  <div class="container container--header">
+    <div class="header__inner">
+
+      <nav class="nav">
+
+        <button class="burger" aria-label="Mobile menu" type="button"> <span></span> </button>
+
+        <a class="logo" href="/index.html">
+          <img src="/logo.cd13699a.svg" alt="logo" width="232" height="40" loading="lazy">
+        </a>
+
+        <div class="nav__inner">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/company.html" class="nav__link true">
+                Company
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="/services.html" class="nav__link false">
+                services
+              </a>
+            </li>
+
+
+            <li class="nav__item">
+              <a href="/insights.html" class="nav__link false">
+                Insights
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/contact.html" class="nav__link false">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+
+          <div class="nav__btns">
+            <a class="btn btn--user" href="/sign-up.html">
+              Sign Up
+            </a>
+
+            <button class="btn btn--reverse request-btn" type="button" formsappId="">
+              Create a Case
+            </button>
+          </div>
+        </div>
+
+      </nav>
+
+    </div>
+
+  </div>
+</header>
+
+
+<script>const startHeightValue = ()=>{
+    let vh = window.innerHeight * 1;
+    document.querySelector(":root").style.setProperty("--vh", `${vh}px`);
+    const pageHeader = document.querySelector(".header");
+    const headerHeight = pageHeader ? pageHeader.offsetHeight : 0;
+    document.documentElement.style.setProperty("--header-height", `${headerHeight}px`);
+    const scrollPosition = window.scrollY;
+    if (scrollPosition > 0) pageHeader.classList.add("header--scroll");
+    else pageHeader.classList.remove("header--scroll");
+};
+window.addEventListener("resize", startHeightValue);
+window.addEventListener("scroll", startHeightValue);
+startHeightValue();
+
+</script>
+
+    <main class="main">
+
+      <section class="hero">
+  <div class="hero__inner" style="background-image: url(&quot;hero.0cedd5ad.jpeg&quot;)">
+    <div class="container">
+      <div class="hero__content">
+        <h1>
+          Empowering Business Success Through Innovative IT Solutions
+        </h1>
+
+        <p>
+          Where Expertise Meets Innovation
+        </p>
+
+        <button class="btn request-btn" type="button" formsappId="">
+          Start Now
+        </button>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <section class="overview">
+  <div class="container">
+    <h2>Company Overview</h2>
+
+    <div class="overview__content">
+      <div class="overview__flex">
+        <img src="/overview.2f086bbc.jpeg" alt="Company Overview" width="557" height="310" loading="lazy">
+        <div class="overview__welcome-message">
+          <p>Hi, there! <br>
+            Thank you for visiting our website. We really appreciate it.
+          </p>
+
+          <p>
+            Our story began in 2005 when we founded BizTech Alliance with a vision to empower businesses through innovative IT solutions, and we have been doing it ever since.
+          </p>
+        </div>
+      </div>
+
+      <p>2010 // Expanded our service offerings to include managed IT services and cloud solutions.</p>
+      <p>2015 // Achieved industry recognition for <span>excellence in cybersecurity</span> and <span>data protection.</span></p>
+      <p>2020 // <span>Launched our IT consulting</span> and strategy services to help clients align technology initiatives with business goals.</p>
+      <p>2022 // Celebrated our <span>17th anniversary</span> and expanded our team of certified professionals to better serve our growing client base.</p>
+    </div>
+  </div>
+</section>
+      <section class="principles">
+  <div class="container">
+    <h2>Values & Principles</h2>
+
+    <div class="principles__values">
+      <div class="item1">Accountability </div>
+      <div class="item2">Continuous Learning </div>
+      <div class="item3">Customer-Centricity </div>
+      <div class="item4">Ethical Conduct </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+      <section class="team">
+  <div class="container">
+    <h2>team</h2>
+
+    <div class="swiper team__swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide team__slide">
+          <img src="/john-smith.89736b97.png" alt="john-smith" width="320" height="400" loading="lazy">
+          <div class="team__description">
+            <h3>John Smith - Founder & CEO</h3>
+            <p>John Smith, the visionary founder of BizTech Alliance Pro Company, established the company in 2005 with a mission to empower businesses through innovative IT solutions. With over 20 years of experience in the IT industry, John brings a wealth of expertise in IT strategy, cybersecurity, and business development.</p>
+            <h3>Role</h3>
+            <p>As the CEO, John oversees the company's strategic direction, ensuring alignment with its core values and objectives. He is passionate about driving growth and innovation, while maintaining a strong focus on customer satisfaction and service excellence.</p>
+          </div>
+        </div>
+        <div class="swiper-slide team__slide">
+          <img src="/emily.cc0cd23c.jpeg" alt="emily" width="320" height="400" loading="lazy">
+          <div class="team__description">
+            <h3>Emily Brown - Chief Operating Officer (COO)</h3>
+            <p>Emily Brown joined BizTech Alliance Pro Company in 2010 and has since played a pivotal role in its growth and success. With a background in operations management and a keen eye for detail, Emily has been instrumental in streamlining processes and optimizing resource allocation.</p>
+            <h3>Role</h3>
+            <p>As the COO, Emily is responsible for overseeing daily operations, managing client relationships, and ensuring the delivery of high-quality IT services. Her leadership and operational expertise have been key factors in the company's ability to adapt and thrive in a competitive market.</p>
+          </div>
+        </div>
+        <div class="swiper-slide team__slide">
+          <img src="/mark.f395b89f.jpeg" alt="mark" width="320" height="400" loading="lazy">
+          <div class="team__description">
+            <h3>Mark Johnson - Chief Technology Officer (CTO)</h3>
+            <p>Mark Johnson joined the team in 2015 and quickly rose through the ranks to become the Chief Technology Officer. With a strong background in software development and IT infrastructure, Mark has been instrumental in driving technological innovation and enhancing the company's service offerings.</p>
+            <h3>Role</h3>
+            <p>As the CTO, Mark leads the technology team, overseeing the development and implementation of cutting-edge IT solutions. His technical expertise and passion for innovation have been crucial in keeping BizTech Alliance Pro Company at the forefront of the IT industry.</p>
+          </div>
+        </div>
+        <div class="swiper-slide team__slide">
+          <img src="/sarah.2ba8a33a.jpeg" alt="sarah" width="320" height="400" loading="lazy">
+          <div class="team__description">
+            <h3>Sarah Williams - Director of Cybersecurity</h3>
+            <p>Sarah Williams joined BizTech Alliance Pro Company in 2018 and has since become a leading expert in cybersecurity and data protection. With certifications in cybersecurity and a deep understanding of the latest threats and trends, Sarah is committed to keeping our clients' data safe and secure.</p>
+            <h3>Role</h3>
+            <p>As the Director of Cybersecurity, Sarah oversees the company's cybersecurity initiatives, implementing robust security measures and best practices to protect against cyber threats and ensure compliance with industry regulations. Her dedication to cybersecurity excellence has earned her the trust and respect of clients and colleagues alike.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+      <section class="approach">
+  <div class="container">
+    <h2>Our Approach</h2>
+
+    <div class="approach__content">
+      <h3><span>We Listen</span>Customer-Centricity</h3>
+      <p>At BizTech Alliance Pro Company, we believe that our clients are at the heart of everything we do. Our approach to delivering IT services is deeply rooted in understanding our clients' unique needs, challenges, and objectives. We take the time to listen, learn, and collaborate with our clients to develop tailored IT solutions that address their specific requirements effectively. Our dedicated account managers and support team are committed to providing personalized service and support, ensuring our clients' satisfaction and success.</p>
+      <h3><span>We Explore</span>Innovation</h3>
+      <p>Innovation is the cornerstone of our approach to IT services. We continuously invest in research and development to stay ahead of the curve and bring the latest technologies and solutions to our clients. Our team of certified IT professionals is encouraged to think creatively and explore new ways to solve complex challenges, driving innovation and delivering cutting-edge solutions that drive business growth and competitive advantage.</p>
+      <h3><span>We Support</span>Collaboration and Partnership</h3>
+      <p>We believe in the power of collaboration and partnership. We view our clients as partners and work closely with them to achieve mutual success. Our collaborative approach fosters open communication, transparency, and trust, enabling us to build long-lasting relationships with our clients and deliver value-added IT services that drive business results. By partnering with BizTech Alliance Pro Company, you gain a strategic ally dedicated to your success, committed to delivering exceptional service, and passionate about leveraging technology to help you achieve your business goals.</p>
+      <h3><span>We Work on Ourselves</span>Quality Assurance</h3>
+      <p>Quality assurance is a top priority for us at BizTech Alliance Pro Company. We adhere to rigorous quality standards and best practices to ensure the delivery of high-quality IT services and solutions that meet and exceed client expectations. Our quality assurance team conducts regular audits and assessments to monitor performance, identify areas for improvement, and implement corrective actions promptly. We are committed to continuous improvement and strive for excellence in everything we do, ensuring the reliability, security, and scalability of our clients' IT infrastructure and applications.</p>
+    </div>
+
+  </div>
+</section>
+
+
+      <section class="client">
+  <div class="container">
+    <h2>Client Testimonials</h2>
+    <div class="swiper client__swiper">
+      <div class="swiper-wrapper client__wrapper">
+        <div class="swiper-slide client__slide">
+          <h3>Alexandra R., CEO</h3>
+          <div class="client__description">
+            <p>BizTech Alliance Pro Company transformed our IT infrastructure, enhancing performance and security. Their expertise and customer-centric approach have been invaluable to our business."</p>
+          </div>
+        </div>
+        <div class="swiper-slide client__slide">
+          <h3>Daniel L., CTO</h3>
+          <div class="client__description">
+            <p>The team at BizTech Alliance Pro Company is highly responsive and knowledgeable. They've helped us streamline operations and improve efficiency across our organization.</p>
+          </div>
+        </div>
+        <div class="swiper-slide client__slide">
+          <h3>Sophia M., COO</h3>
+          <div class="client__description">
+            <p>We chose BizTech Alliance Pro Company for their innovative IT solutions and exceptional customer service. They've exceeded our expectations and become a trusted partner.</p>
+          </div>
+        </div>
+        <div class="swiper-slide client__slide">
+          <h3>Liam K., IT Manager</h3>
+          <div class="client__description">
+            <p>BizTech Alliance Pro Company's cybersecurity services have provided us with peace of mind. Their proactive approach to security has effectively protected our data and systems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <section class="contact">
+  <div class="container">
+
+    <div class="contact__wrapper" id="contact">
+      
+      <h2 class="title">
+        Contact Us
+      </h2>
+
+      <form class="contact__form">
+        <label>
+          <input id="name" type="text" placeholder="Enter your name">
+        </label>
+
+        <label>
+          <input type="text" placeholder="Enter your email address">
+        </label>
+
+        <label>
+          <textarea placeholder="Your message..."></textarea>
+        </label>
+
+        <button class="btn btn--reverse" type="submit">
+          Send Message
+        </button>
+      </form>
+
+    </div>
+  </div>
+</section>
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+
+    <div class="footer__inner">
+
+      <nav class="nav__inner">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="/company.html" class="nav__link {{ page === 'company' }}">
+              Company
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="/services.html" class="nav__link {{ page === 'services' }}">
+              services
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="/insights.html" class="nav__link {{ page === 'insights' }}">
+              Insights
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="nav__list">
+
+          <li class="nav__item">
+            <a href="/contact.html" class="nav__link {{ page === 'contact' }}">
+              Contact Us
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a class="btn btn--user" href="/sign-up.html">
+              Sign Up
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <button class="btn request-btn" type="button" formsappId="">
+              Create a Case
+            </button>
+          </li>
+        </ul>
+
+      </nav>
+
+      <div class="footer__info">
+        <nav class="nav">
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/privacy-policy.html" class="nav__link ">
+                Privacy Policy
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/terms-of-use.html" class="nav__link">
+                Terms of Use
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <p>
+          BizTech Alliance Pro © 2024. All Rights Reserved
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+
+</footer>
+
+
+<script src="https://forms.app/static/embed.js" async="" defer="" onload="new formsapp('661cc3d5152e1d88df2acc6e', 'popup', {'overlay':'rgba(45,45,45,0.5)','button':{'color':'','text':'Make an Order'},'width':'800px','height':'600px','openingAnimation':{'entrance':'animate__fadeIn','exit':'animate__fadeOut'}});"></script>
+
+  </div>
+</body>
+
+</html>
+
+
+

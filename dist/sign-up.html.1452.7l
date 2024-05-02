@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Workspace Comforts | Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="/company.21711d4b.css">
+  <link rel="stylesheet" href="/company.b10d73a7.css">
+
+  <script src="/company.6300e3bc.js" defer=""></script>
+  <script src="/company.975ef6c8.js" defer=""></script>
+
+  <style>.page {
+  scroll-padding-top: calc(var(--header-height));
+}
+</style>
+
+</head>
+
+<body class="page__body"><svg aria-hidden="true" width="0" height="0" style="position:absolute"></svg>
+  <div class="site-container">
+
+    <header class="header">
+  <div class="container container--header">
+    <div class="header__inner">
+
+      <nav class="nav">
+
+        <button class="burger" aria-label="Mobile menu" type="button"> <span></span> </button>
+
+        <a class="logo" href="/index.html">
+          <img src="/logo.cd13699a.svg" alt="logo" width="232" height="40" loading="lazy">
+        </a>
+
+        <div class="nav__inner">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/company.html" class="nav__link false">
+                Company
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="/services.html" class="nav__link false">
+                services
+              </a>
+            </li>
+
+
+            <li class="nav__item">
+              <a href="/insights.html" class="nav__link false">
+                Insights
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/contact.html" class="nav__link false">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+
+          <div class="nav__btns">
+            <a class="btn btn--user" href="/sign-up.html">
+              Sign Up
+            </a>
+
+            <button class="btn btn--reverse request-btn" type="button" formsappId="">
+              Create a Case
+            </button>
+          </div>
+        </div>
+
+      </nav>
+
+    </div>
+
+  </div>
+</header>
+
+
+<script>const startHeightValue = ()=>{
+    let vh = window.innerHeight * 1;
+    document.querySelector(":root").style.setProperty("--vh", `${vh}px`);
+    const pageHeader = document.querySelector(".header");
+    const headerHeight = pageHeader ? pageHeader.offsetHeight : 0;
+    document.documentElement.style.setProperty("--header-height", `${headerHeight}px`);
+    const scrollPosition = window.scrollY;
+    if (scrollPosition > 0) pageHeader.classList.add("header--scroll");
+    else pageHeader.classList.remove("header--scroll");
+};
+window.addEventListener("resize", startHeightValue);
+window.addEventListener("scroll", startHeightValue);
+startHeightValue();
+
+</script>
+
+    <main class="main main--top">
+      <iframe id="" allowtransparency="true" allowfullscreen="true" allow="geolocation; microphone; camera" src="https://my.forms.app/form/661cc251152e1d0ab12acbb1" frameborder="0" style="border: none; width: 100vw; min-width: 100%; height: 1350px"></iframe>
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+
+    <div class="footer__inner">
+
+      <nav class="nav__inner">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="/company.html" class="nav__link {{ page === 'company' }}">
+              Company
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="/services.html" class="nav__link {{ page === 'services' }}">
+              services
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="/insights.html" class="nav__link {{ page === 'insights' }}">
+              Insights
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="nav__list">
+
+          <li class="nav__item">
+            <a href="/contact.html" class="nav__link {{ page === 'contact' }}">
+              Contact Us
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a class="btn btn--user" href="/sign-up.html">
+              Sign Up
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <button class="btn request-btn" type="button" formsappId="">
+              Create a Case
+            </button>
+          </li>
+        </ul>
+
+      </nav>
+
+      <div class="footer__info">
+        <nav class="nav">
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/privacy-policy.html" class="nav__link ">
+                Privacy Policy
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/terms-of-use.html" class="nav__link">
+                Terms of Use
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <p>
+          BizTech Alliance Pro © 2024. All Rights Reserved
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+
+</footer>
+
+
+<script src="https://forms.app/static/embed.js" async="" defer="" onload="new formsapp('661cc3d5152e1d88df2acc6e', 'popup', {'overlay':'rgba(45,45,45,0.5)','button':{'color':'','text':'Make an Order'},'width':'800px','height':'600px','openingAnimation':{'entrance':'animate__fadeIn','exit':'animate__fadeOut'}});"></script>
+
+  </div>
+</body>
+
+</html>

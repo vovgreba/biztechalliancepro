@@ -1,4 +1,9 @@
-# biztechalliancepro
+# This project biztechalliancepro
+
+> Built with Parcel bundler.
+## You can watch this project on GitHub Pages.
+[Ссылка на главную страницу](https://vovgreba.github.io/biztechalliancepro/dist/index)
+
 
 This project was created using Parcel. For introduction and setup additional
 features [refer to documentation](https://parceljs.org/).

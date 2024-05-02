@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Workspace Comforts | Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="/company.21711d4b.css">
+  <link rel="stylesheet" href="/company.b10d73a7.css">
+
+  <script src="/company.6300e3bc.js" defer=""></script>
+  <script src="/company.975ef6c8.js" defer=""></script>
+
+  <style>.page {
+  scroll-padding-top: calc(var(--header-height));
+}
+</style>
+
+</head>
+
+<body class="page__body"><svg aria-hidden="true" width="0" height="0" style="position:absolute"></svg>
+  <div class="site-container">
+
+    <header class="header">
+  <div class="container container--header">
+    <div class="header__inner">
+
+      <nav class="nav">
+
+        <button class="burger" aria-label="Mobile menu" type="button"> <span></span> </button>
+
+        <a class="logo" href="/index.html">
+          <img src="/logo.cd13699a.svg" alt="logo" width="232" height="40" loading="lazy">
+        </a>
+
+        <div class="nav__inner">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/company.html" class="nav__link false">
+                Company
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="/services.html" class="nav__link false">
+                services
+              </a>
+            </li>
+
+
+            <li class="nav__item">
+              <a href="/insights.html" class="nav__link false">
+                Insights
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/contact.html" class="nav__link false">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+
+          <div class="nav__btns">
+            <a class="btn btn--user" href="/sign-up.html">
+              Sign Up
+            </a>
+
+            <button class="btn btn--reverse request-btn" type="button" formsappId="">
+              Create a Case
+            </button>
+          </div>
+        </div>
+
+      </nav>
+
+    </div>
+
+  </div>
+</header>
+
+
+<script>const startHeightValue = ()=>{
+    let vh = window.innerHeight * 1;
+    document.querySelector(":root").style.setProperty("--vh", `${vh}px`);
+    const pageHeader = document.querySelector(".header");
+    const headerHeight = pageHeader ? pageHeader.offsetHeight : 0;
+    document.documentElement.style.setProperty("--header-height", `${headerHeight}px`);
+    const scrollPosition = window.scrollY;
+    if (scrollPosition > 0) pageHeader.classList.add("header--scroll");
+    else pageHeader.classList.remove("header--scroll");
+};
+window.addEventListener("resize", startHeightValue);
+window.addEventListener("scroll", startHeightValue);
+startHeightValue();
+
+</script>
+
+    <main class="main">
+      <section class="hero">
+  <div class="hero__inner" style="background-image: url(&quot;hero.1d346d8f.jpeg&quot;)">
+    <div class="container">
+      <div class="hero__content hero__content--home">
+
+        <h1>
+          The Power of Technology for Your Business Success
+        </h1>
+
+        <p>
+          We empower businesses to thrive in the digital age
+        </p>
+
+        <button class="btn request-btn" type="button" formsappId="">
+          Start Now
+        </button>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+      <section class="services">
+  <div class="container">
+
+      <h2>
+        Services
+      </h2>
+
+      <p>
+        At BizTech Alliance Pro Company, we offer a wide range of IT services designed to meet the unique needs of businesses across various industries. Whether you're looking to streamline operations, enhance security, or drive innovation, our expert team has you covered.
+      </p>
+
+      <div class="services__cards cards">
+        <div class="services__card card">
+          <img src="/managed.9f12c0b3.jpeg" width="389" height="254" loading="lazy" alt="Managed IT Services">
+          <div class="services__card-content card-content">
+            <h3>Managed IT Services</h3>
+            <p>
+              From proactive monitoring and maintenance to helpdesk support and IT strategy consulting, our Managed IT Services ensure your infrastructure runs smoothly and efficiently.
+            </p>
+          </div>
+        </div>
+
+        <div class="services__card card">
+          <img src="/solutions.b9908042.jpeg" width="389" height="254" loading="lazy" alt="Cloud Solutions">
+
+          <div class="services__card-content card-content">
+            <h3>Cloud Solutions</h3>
+            <p>
+              Unlock the power of the cloud with our tailored cloud solutions, including cloud migration, management, and optimization services, to boost agility, scalability, and cost-efficiency.
+            </p>
+          </div>
+        </div>
+
+        <div class="services__card card">
+          <img src="/cybersecurity.e7a5a0dc.jpeg" width="389" height="254" loading="lazy" alt="Cybersecurity Solutions">
+          <div class="services__card-content card-content">
+            <h3>Cybersecurity Solutions</h3>
+            <p>
+              Protect your business from cyber threats and data breaches with our comprehensive cybersecurity solutions, featuring advanced threat detection, prevention, and compliance management.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <a href="/services.html" class="btn">
+        Explore Portfolio
+      </a>
+  </div>
+</section>
+      <section class="choose">
+    <div class="container">
+
+      <div class="choose__header">
+        <h2>Why Choose Us</h2>
+        <a href="#" class="btn">
+          About Us
+        </a>
+      </div>
+      <p>
+        Choosing the right IT partner is crucial for the success and growth of your business. At BizTech Alliance Pro Company, we pride ourselves on delivering exceptional value and unparalleled service to our clients.
+      </p>
+
+      <div class="choose__items">
+        <div class="choose__item">
+          <h3>Expertise and Experience</h3>
+          <p>Our team consists of certified IT experts with extensive industry experience, ensuring that you receive top-notch service and guidance.</p>
+        </div>
+        <div class="choose__item">
+          <h3>Reliability</h3>
+          <p>We have a proven track record of delivering reliable solutions that we are proud of.</p>
+        </div>
+        <div class="choose__item">
+          <h3>Performance</h3>
+          <p>We provide high-performance IT solutions that meet and exceed client expectations.</p>
+        </div>
+        <div class="choose__item">
+          <h3>Customer-Centric Approach</h3>
+          <p>Our customer-centric approach means we prioritize your needs and provide personalized support to ensure your satisfaction.</p>
+        </div>
+        <div class="choose__item">
+          <h3>Customized Solutions</h3>
+          <p>We offer customized IT solutions designed to address your specific business challenges and objectives, ensuring alignment with your strategic goals.
+          </p>
+        </div>
+        <div class="choose__item">
+          <h3>Security and Compliance</h3>
+          <p>We prioritize the security of your data and infrastructure, implementing advanced security measures and ensuring compliance with industry regulations.</p>
+        </div>
+
+      </div>
+    </div>
+</section>
+
+
+
+      <section class="review">
+  <div class="container">
+    <div class="review__inner">
+      <div class="swiper my-swiper">
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide my-swiper-slide">
+            <h2>John Doe, CEO, TechCorp</h2>
+            <div class="swiper__content ">
+              <p>BizTech Alliance Pro Company has been instrumental in helping us streamline our IT operations and enhance our cybersecurity posture. Their expertise, reliability, and customer service are second to none.</p>
+            </div>
+          </div>
+          <div class="swiper-slide my-swiper-slide">
+            <h2>Jane Smith, COO, InnovateTech</h2>
+            <div class="swiper__content">
+              <p>We chose BizTech Alliance Pro Company for their comprehensive IT services and have been impressed with their professionalism and commitment to excellence. They truly understand our business needs.</p>
+            </div>
+          </div>
+          <div class="swiper-slide my-swiper-slide">
+            <h2>Michael Johnson, CTO, GlobalWidgets</h2>
+            <div class="swiper__content">
+              <p>Partnering with BizTech Alliance Pro Company was one of the best decisions we've made for our business. We have significantly improved our operational efficiency and reduced our IT-related costs.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="swiper-button-prev my-button-prev"></div>
+      <div class="swiper-button-next my-button-next"></div>
+      <div class="swiper-pagination swiper-pagination-review"></div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+      <section class="insights">
+  <div class="container">
+    <h2>
+      Insights
+    </h2>
+
+    <div class="insights__cards cards">
+      <div class="insights__card card">
+        <img src="/network.fe51e5ac.jpeg" width="389" height="254" loading="lazy" alt="The Importance of Network Infrastructure for Business Success">
+        <div class="insights__card-content card-content">
+          <h3>The Importance of Network Infrastructure for Business Success</h3>
+          <p>
+            Compact, energy-efficient home
+          </p>
+        </div>
+      </div>
+
+      <div class="insights__card card">
+        <img src="/infrastructure.e4fc1012.jpeg" width="389" height="254" loading="lazy" alt="Scalable Solutions: Planning Your IT Infrastructure for Growth">
+
+        <div class="insights__card-content card-content">
+          <h3>Scalable Solutions: Planning Your IT Infrastructure for Growth</h3>
+          <p>
+            Modular, scalable office spaces
+          </p>
+        </div>
+      </div>
+
+      <div class="insights__card card">
+        <div class="card__wrapper">
+          <div class="item">App1</div>
+          <div class="item">App2</div>
+          <div class="item">App3</div>
+          <div class="item">?</div>
+          <div class="item">?</div>
+          <div class="item">?</div>
+        </div>
+        <div class="insights__card-content card-content">
+          <h3>Virtualization vs. <span>Containerization: Choosing</span> the Right Approach</h3>
+          <p>
+            A versatile, modular construction
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <a href="/insights.html" class="btn">
+      Read More
+    </a>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+      <section class="subscribe">
+  <div class="container">
+
+
+    <div class="subscribe__inner">
+      <h2>Subscribe to our newsletter!</h2>
+      <form class="subscribe__form">
+        <label>
+          <input id="name" type="email" placeholder="Email">
+        </label>
+        <button class="btn" type="submit">
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+
+    <div class="footer__inner">
+
+      <nav class="nav__inner">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="/company.html" class="nav__link {{ page === 'company' }}">
+              Company
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="/services.html" class="nav__link {{ page === 'services' }}">
+              services
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="/insights.html" class="nav__link {{ page === 'insights' }}">
+              Insights
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="nav__list">
+
+          <li class="nav__item">
+            <a href="/contact.html" class="nav__link {{ page === 'contact' }}">
+              Contact Us
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a class="btn btn--user" href="/sign-up.html">
+              Sign Up
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <button class="btn request-btn" type="button" formsappId="">
+              Create a Case
+            </button>
+          </li>
+        </ul>
+
+      </nav>
+
+      <div class="footer__info">
+        <nav class="nav">
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/privacy-policy.html" class="nav__link ">
+                Privacy Policy
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/terms-of-use.html" class="nav__link">
+                Terms of Use
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <p>
+          BizTech Alliance Pro © 2024. All Rights Reserved
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+
+</footer>
+
+
+<script src="https://forms.app/static/embed.js" async="" defer="" onload="new formsapp('661cc3d5152e1d88df2acc6e', 'popup', {'overlay':'rgba(45,45,45,0.5)','button':{'color':'','text':'Make an Order'},'width':'800px','height':'600px','openingAnimation':{'entrance':'animate__fadeIn','exit':'animate__fadeOut'}});"></script>
+
+  </div>
+</body>
+
+</html>
+
