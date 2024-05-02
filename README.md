@@ -2,7 +2,7 @@
 
 > Built with Parcel bundler.
 ## You can watch this project on GitHub Pages.
-[Ссылка на главную страницу](https://vovgreba.github.io/biztechalliancepro/dist/index)
+[Link to the main page](https://vovgreba.github.io/biztechalliancepro/dist/index)
 
 
 This project was created using Parcel. For introduction and setup additional
